@@ -1,0 +1,8 @@
+.catalog:
+  name: SMI Device Discovery Microservices
+  version: 1.0.0
+  description: |
+    (Experimental) SMI Device Discovery Microservices.
+  minimum_rancher_version: v0.59.0
+  maintainer: "RackHD Mustang Team <prashanth_l_gowda@dell.com>"
+  uuid: smi-discovery-0

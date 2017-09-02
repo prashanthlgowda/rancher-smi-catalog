@@ -1,0 +1,8 @@
+.catalog:
+  name: DellEMC SMI Server Configuration Profile Microservice
+  version: 1.0.0
+  description: |
+    (Experimental) DellEMC SMI Server Configuration Profile Microservice
+  minimum_rancher_version: v0.59.0
+  maintainer: "RackHD Mustang Team <prashanth_l_gowda@dell.com>"
+  uuid: smi-scp-0

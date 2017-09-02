@@ -1,0 +1,12 @@
+version: '2'
+services:
+  dell-chassis-inventory:
+    container_name: dell-chassis-inventory
+    image: rackhd/dell-chassis-inventory:latest
+    ports:
+    - 46001:46001
+    mem_limit: 768m
+    environment:
+    - "SPRING_PROFILES_ACTIVE=default"
+    - _JAVA_OPTIONS=-Xmx128m -Xss256k
+

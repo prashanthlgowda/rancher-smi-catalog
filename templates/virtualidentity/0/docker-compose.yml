@@ -1,0 +1,22 @@
+version: '2'
+services:
+  virtualidentity:
+    container_name: virtualidentity
+    image: rackhd/virtualidentity:latest
+    depends_on:
+    - postgresql
+    ports:
+    - 46015:46015
+    mem_limit: 512m
+    environment:
+    - "SPRING_PROFILES_ACTIVE=default"
+    - _JAVA_OPTIONS=-Xmx64m -Xss256k
+
+  postgresql:
+    container_name: postgresql
+    image: postgres:9.6.1-alpine
+    ports:
+    - 5433:5432
+    mem_limit: 512m
+    environment:
+      - POSTGRES_PASSWORD=Dell123$$

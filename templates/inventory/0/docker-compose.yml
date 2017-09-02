@@ -1,0 +1,11 @@
+version: '2'
+services:
+  dell-server-inventory:
+    container_name: dell-server-inventory
+    image: rackhd/dell-server-inventory:latest
+    ports:
+    - 46011:46011
+    mem_limit: 1024m
+    environment:
+    - "SPRING_PROFILES_ACTIVE=default"
+    - _JAVA_OPTIONS=-Xmx128m -Xss256k

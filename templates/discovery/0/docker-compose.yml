@@ -1,0 +1,11 @@
+version: '2'
+services:
+  device-discovery:
+    container_name: device-discovery
+    image: rackhd/device-discovery:latest
+    ports:
+    - 46002:46002
+    mem_limit: 768m
+    environment:
+    - "SPRING_PROFILES_ACTIVE=default"
+    - _JAVA_OPTIONS=-Xmx128m -Xss228k

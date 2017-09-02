@@ -1,0 +1,11 @@
+version: '2'
+services:
+  dell-powerthermal-monitoring:
+    container_name: dell-powerthermal-monitoring
+    image: rackhd/dell-powerthermal-monitoring:latest
+    ports:
+    - 46019:46019
+    mem_limit: 768m
+    environment:
+    - "SPRING_PROFILES_ACTIVE=default"
+    - _JAVA_OPTIONS=-Xmx128m -Xss256k

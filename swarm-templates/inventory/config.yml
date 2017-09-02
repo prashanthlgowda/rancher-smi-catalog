@@ -1,0 +1,8 @@
+name: DellEMC SMI Server Inventory Microservice
+description: |
+  (Experimental) SMI Server Inventory Microservice
+version: 1.0.0
+category: Applications
+maintainer: "Katalist Mustang <Prashanth_L_Gowda@dell.com>"
+license: # Apache 2.0
+projectURL: https://github.com/RackHD/smi-service-dell-server-inventory

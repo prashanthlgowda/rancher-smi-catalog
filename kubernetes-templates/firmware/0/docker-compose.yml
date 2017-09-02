@@ -1,0 +1,13 @@
+version: '2'
+services:
+  dell-server-firmwareupdate:
+    container_name: dell-server-firmwareupdate
+    image: rackhd/dell-server-firmwareupdate:latest
+    ports:
+    - 46010:46010
+    privileged: true
+    mem_limit: 1024m
+    environment:
+    - "SPRING_PROFILES_ACTIVE=default"
+    - _JAVA_OPTIONS=-Xmx128m -Xss256k
+

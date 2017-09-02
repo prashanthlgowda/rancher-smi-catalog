@@ -1,0 +1,12 @@
+version: '2'
+services:
+  dell-server-action:
+    container_name: dell-server-action
+    image: rackhd/dell-server-action:latest
+    network_mode: "host"
+    ports:
+    - 46007:46007
+    mem_limit: 512m
+    environment:
+    - "SPRING_PROFILES_ACTIVE=default"
+    - _JAVA_OPTIONS=-Xmx64m -Xss256k

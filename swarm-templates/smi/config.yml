@@ -1,0 +1,8 @@
+name: DellEMC SMI Microservices - Complete Suite
+description: |
+  (Experimental) SMI Service suite - includes PowerEdge Services 
+version: 1.0.0
+category: Applications
+maintainer: "Katalist Mustang <Prashanth_L_Gowda@dell.com>"
+license: # Apache 2.0
+projectURL: https://github.com/RackHD

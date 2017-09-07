@@ -6,3 +6,24 @@
   minimum_rancher_version: v0.59.0
   maintainer: "RackHD Mustang Team <prashanth_l_gowda@dell.com>"
   uuid: smi-discovery-0
+  questions:
+    - variable: PORT
+      label: Port
+      default: 46002
+      required: true
+      type: int
+    - variable: SERVER
+      label: "Server"
+      default: required
+      type: "multiline"
+      required: true
+    - variable: CHASSIS
+      label: "Chassis"
+      default: required
+      type: "multiline"
+      required: true
+    - variable: SWITCH
+      default: required
+      label: "Swiss"
+      type: "multiline"
+      required: true
